@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>College Event Booking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="hstyle.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Desk nav -->
+      <nav class="navbar">
+        <h2 class="logo">EventHub</h2>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile nav -->
+      <nav class="mobile-nav">
+        <div class="logo">EventHub</div>
+        <button class="menu-icon" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobilemenu">
+        <button class="close-btn" type="button">
+          &times;
+        </button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-slides">
+        <img
+          src="himg/hero1.jpg"
+          class="hero-slide active"
+          alt="College event audience"
+        />
+        <img src="himg/hero2.jpg" class="hero-slide" alt="College event stage" />
+        <img
+          src="himg/hero3.jpg"
+          class="hero-slide"
+          alt="Students at an event"
+        />
+        <img src="himg/hero4.jpg" class="hero-slide" alt="College celebration" />
+      </div>
+
+      <div class="hero-content">
+        <h1>Campus Events, All in One Place</h1>
+        <p>
+          Find club sessions, department workshops, coding contests, and
+          seminars without checking every notice board.
+        </p>
+
+        <p id="date"></p>
+
+        <button class="go-events-btn">Explore Events</button>
+      </div>
+    </section>
+
+    <section class="featured-events">
+      <h2>This Week on Campus</h2>
+
+      <div class="event-container">
+        <div class="event-card">
+          <img src="himg/event1.jpg" alt="AI Tools for Students" />
+          <h3>AI Tools for Students</h3>
+          <span class="event-meta">Apr 21 | CSE Club</span>
+          <p>
+            Use AI for notes, presentations, coding help, and project planning.
+          </p>
+          <button class="go-booking-btn">Register</button>
+        </div>
+
+        <div class="event-card">
+          <img src="himg/event2.jpg" alt="Campus CodeSprint 2026" />
+          <h3>Campus CodeSprint 2026</h3>
+          <span class="event-meta">Apr 21 | Coding Club</span>
+          <p>Team up, build a working prototype, and pitch it to the panel.</p>
+          <button class="go-booking-btn">Register</button>
+        </div>
+
+        <div class="event-card">
+          <img src="himg/event3.jpg" alt="Frontend Basics Lab" />
+          <h3>Frontend Basics Lab</h3>
+          <span class="event-meta">Apr 21 | CSE Dept</span>
+          <p>
+            Build a simple web page with HTML, CSS, and JavaScript practice.
+          </p>
+          <button class="go-booking-btn">Register</button>
+        </div>
+
+        <div class="event-card">
+          <img src="himg/event4.jpg" alt="Data Analytics Mini Project" />
+          <h3>Data Analytics Mini Project</h3>
+          <span class="event-meta">Apr 21 | DATA Club</span>
+          <p>
+            Clean a small dataset and turn it into charts for a mini report.
+          </p>
+          <button class="go-booking-btn">Register</button>
+        </div>
+        <div class="more-events-row">
+          <button class="btn go-events-btn">View More Events</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>EventHub</h3>
+          <p>
+            Made for students who want to track campus events without missing
+            department updates or club announcements.
+          </p>
+          <p>Managed by the Student Activity Cell | &copy; 2026 EventHub</p>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="hscript.js"></script>
+  </body>
+</html>
