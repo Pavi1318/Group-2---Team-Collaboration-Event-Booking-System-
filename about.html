@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - College Event Booking</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <!--Header section-->
+    <header>
+        <h1>About Our Project</h1>
+    </header>
+    <div class="container">
+        <!-- About Project -->
+        <div class="section">
+            <h2>About Project</h2>
+            <p>
+                The College Event Booking System is a simple web application
+                designed to help students explore and book college events easily.
+                It provides a simple and user-friendly platform to view event details
+                and reserve seats.
+            </p>
+        </div>
+
+        <!-- Objectives -->
+        <div class="section">
+            <h2>Objectives</h2>
+            <ul>
+                <li>Make event booking simple for students</li>
+                <li>Provide clear event information</li>
+                <li>Reduce manual event registration</li>
+            </ul>
+        </div>
+
+        <!-- Features -->
+        <div class="section">
+            <h2>Features</h2>
+            <ul>
+                <li>Browse available events</li>
+                <li>View event details</li>
+                <li>Book seats online</li>
+                <li>Simple login system</li>
+            </ul>
+        </div>
+
+        <!-- Event Categories -->
+        <div class="section">
+            <h2>Event Categories</h2>
+            <ul>
+                <li>Workshops (AI, Web Development)</li>
+                <li>Technical Events (Hackathons)</li>
+                <li>Cultural Events (Dance, Music)</li>
+                <li>Seminars & Career Talks</li>
+            </ul>
+        </div>
+
+        <!-- How It Works -->
+        <div class="section">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Login to your account</li>
+                <li>Browse available events</li>
+                <li>View event details</li>
+                <li>Book your seat</li>
+            </ol>
+        </div>
+
+        <!-- Info Section  -->
+        <div class="section">
+            <h2>Project Highlights</h2>
+            <p>&#10004; 6+ Events Available</p>
+            <p>&#10004; 100+ Students Participated</p>
+        </div>
+
+    </div>
+    <!--Aboutus Button -->
+    <button class="about-btn" onclick="togglePopup()">About Us</button>
+
+    <!-- Popup Box -->
+    <div id="teamPopup" class="popup hidden">
+        <h3>Our Team</h3>
+        <ul>
+            <li>Pavithra Balaji - Team Lead</li>
+            <li>Goutham R</li>
+            <li>Sachin Elumalai</li>
+            <li>Karthikeyan D</li>
+            <li>Arun Kumar K</li>
+            <li>Jaysuriya S</li>
+        </ul>
+    </div>
+
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById("teamPopup");
+            popup.classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>

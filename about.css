@@ -1,0 +1,54 @@
+body {
+margin: 0;
+background-color:white;
+}
+/* Header style */
+header {
+background-color:rgb(49, 49, 83);
+color: white;
+padding: 10px; /*larger background color fill around heading text*/
+text-align: center;
+}
+/* All Section style */
+.section {
+background-color: #f4f4f4;
+padding: 20px;
+margin-bottom: 15px;
+border-radius: 8px;
+}
+/* Container style - Make section width shrink */
+.container {
+width: 80%;
+margin: 20px auto;
+}
+/* Aboutus Button */
+.about-btn {
+    position: fixed; /*to make button fixed */
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50px;
+    /* cursor: pointer; */
+}
+/* Aboutus Button - just make color change in button */
+.about-btn:hover {
+    background-color: #0056b3;
+}
+/* Popup Box */
+.popup {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* Hide popup */
+.hidden {
+    display: none;
+}
