@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('./images/b1.jpg')] bg-cover bg-center bg-fixed bg-blend-overlay bg-gray-500 font-sans text-white">
+
+
+  <nav class="bg-nonetext-black p-4">
+    <div class="flex justify-between container mx-auto">
+      <h1 class="text-xl font-bold">Event Booking</h1>
+      <ul class="flex gap-5">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html" class="font-bold underline">Events</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="text-center mt-8">
+    <h2 class="text-3xl font-bold">All Events</h2>
+    <p class="text-white">Explore and book your favorite events</p>
+  </div>
+
+  <div class="flex justify-center mt-6">
+    <input id="searchInput" type="text" placeholder="Search events..."
+      class="w-1/2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+  </div>
+
+  <div id="eventContainer" class="grid md:grid-cols-3 gap-6 p-10">
+
+    <div class="event bg-white p-5 rounded-lg shadow hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold text-black">AI Workshop</h3>
+      <p class="text-black">Date: October 15, 2026</p>
+      <p class="mt-2 text-black">Learn basics of AI with hands-on training.</p>
+      <a href="details.html?id=1" class="block mt-4 bg-black text-white text-center py-2 rounded hover:bg-gray-700">
+        View Details
+      </a>
+    </div>
+
+    <div class="event bg-white p-5 rounded-lg shadow hover:shadow-xl transition">
+      <h3 class="text-xl text-black font-semibold">Web Development Bootcamp</h3>
+      <p class="text-black">Date: November 2, 2026</p>
+      <p class="mt-2 text-black">Master HTML, CSS, JS in 2 days.</p>
+      <a href="details.html?id=2" class="block mt-4 bg-black text-white text-center py-2 rounded hover:bg-gray-700">
+        View Details
+      </a>
+    </div>
+
+    <div class="event bg-white p-5 rounded-lg shadow hover:shadow-xl transition">
+      <h3 class="text-xl text-black font-semibold">Hackathon 2026</h3>
+      <p class="text-black">Date:November 20 - November 22, 2026,
+</p>
+      <p class="mt-2 text-black">24-hour coding competition.</p>
+      <a href="details.html?id=3" class="block mt-4 bg-black text-white text-center py-2 rounded hover:bg-gray-700">
+        View Details
+      </a>
+    </div>
+
+    <div class="event bg-white p-5 rounded-lg shadow hover:shadow-xl transition">
+      <h3 class="text-xl text-black font-semibold">Career Seminar</h3>
+      <p class="text-black">Date: December 5, 2026</p>
+      <p class="mt-2 text-black">Guidance from industry experts.</p>
+      <a href="details.html?id=4" class="block mt-4 bg-black text-white text-center py-2 rounded hover:bg-gray-700">
+        View Details
+      </a>
+    </div>
+
+    <div class="event bg-white p-5 rounded-lg shadow hover:shadow-xl transition">
+      <h3 class="text-xl text-black font-semibold">Dance Fest</h3>
+      <p class="text-black">Date: December 12, 2026</p>
+      <p class="mt-2 text-black">Show your talent and win prizes.</p>
+      <a href="details.html?id=5" class="block mt-4 bg-black text-white text-center py-2 rounded hover:bg-gray-700">
+        View Details
+      </a>
+    </div>
+
+    <div class="event bg-white p-5 rounded-lg shadow hover:shadow-xl transition">
+      <h3 class="text-xl text-black font-semibold">Music Night</h3>
+      <p class="text-black">Date: December 18, 2026</p>
+      <p class="mt-2 text-black">Enjoy live band performances.</p>
+      <a href="details.html?id=6" class="block mt-4 bg-black text-white text-center py-2 rounded hover:bg-gray-700">
+        View Details
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="bg-white-600 text-white text-center p-4">
+    © 2026 College Event Booking System
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const events = document.querySelectorAll(".event");
+
+    searchInput.addEventListener("keyup", function () {
+      const value = this.value.toLowerCase();
+
+      events.forEach(event => {
+        const text = event.innerText.toLowerCase();
+
+        if (text.includes(value)) {
+          event.style.display = "block";
+        } else {
+          event.style.display = "none";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
